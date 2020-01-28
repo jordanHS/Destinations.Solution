@@ -1,0 +1,14 @@
+/Users/Guest/Desktop/Destinations.Solution/Destinations/bin/Debug/netcoreapp2.2/Destinations.deps.json
+/Users/Guest/Desktop/Destinations.Solution/Destinations/bin/Debug/netcoreapp2.2/Destinations.runtimeconfig.json
+/Users/Guest/Desktop/Destinations.Solution/Destinations/bin/Debug/netcoreapp2.2/Destinations.runtimeconfig.dev.json
+/Users/Guest/Desktop/Destinations.Solution/Destinations/bin/Debug/netcoreapp2.2/Destinations.dll
+/Users/Guest/Desktop/Destinations.Solution/Destinations/bin/Debug/netcoreapp2.2/Destinations.pdb
+/Users/Guest/Desktop/Destinations.Solution/Destinations/obj/Debug/netcoreapp2.2/Destinations.csprojAssemblyReference.cache
+/Users/Guest/Desktop/Destinations.Solution/Destinations/obj/Debug/netcoreapp2.2/Destinations.csproj.CoreCompileInputs.cache
+/Users/Guest/Desktop/Destinations.Solution/Destinations/obj/Debug/netcoreapp2.2/Destinations.RazorAssemblyInfo.cache
+/Users/Guest/Desktop/Destinations.Solution/Destinations/obj/Debug/netcoreapp2.2/Destinations.RazorAssemblyInfo.cs
+/Users/Guest/Desktop/Destinations.Solution/Destinations/obj/Debug/netcoreapp2.2/Destinations.AssemblyInfoInputs.cache
+/Users/Guest/Desktop/Destinations.Solution/Destinations/obj/Debug/netcoreapp2.2/Destinations.AssemblyInfo.cs
+/Users/Guest/Desktop/Destinations.Solution/Destinations/obj/Debug/netcoreapp2.2/Destinations.RazorTargetAssemblyInfo.cache
+/Users/Guest/Desktop/Destinations.Solution/Destinations/obj/Debug/netcoreapp2.2/Destinations.dll
+/Users/Guest/Desktop/Destinations.Solution/Destinations/obj/Debug/netcoreapp2.2/Destinations.pdb
