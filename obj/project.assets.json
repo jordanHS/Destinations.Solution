@@ -12172,11 +12172,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/Guest/Desktop/Destinations.Solution/Destinations/Destinations.csproj",
+      "projectUniqueName": "/Users/Guest/Desktop/Destinations.Solution/Destinations.csproj",
       "projectName": "Destinations",
-      "projectPath": "/Users/Guest/Desktop/Destinations.Solution/Destinations/Destinations.csproj",
+      "projectPath": "/Users/Guest/Desktop/Destinations.Solution/Destinations.csproj",
       "packagesPath": "/Users/Guest/.nuget/packages/",
-      "outputPath": "/Users/Guest/Desktop/Destinations.Solution/Destinations/obj/",
+      "outputPath": "/Users/Guest/Desktop/Destinations.Solution/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

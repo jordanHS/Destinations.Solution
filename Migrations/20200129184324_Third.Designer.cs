@@ -2,14 +2,16 @@
 using Destinations.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Destinations.Migrations
 {
     [DbContext(typeof(DestinationsContext))]
-    partial class DestinationsContextModelSnapshot : ModelSnapshot
+    [Migration("20200129184324_Third")]
+    partial class Third
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -49,13 +51,6 @@ namespace Destinations.Migrations
                         new
                         {
                             DestinationId = 3,
-                            City = "Frankfurt",
-                            Country = "Germany",
-                            Rating = 10
-                        },
-                        new
-                        {
-                            DestinationId = 4,
                             City = "Talinn",
                             Country = "Estonia",
                             Rating = 9
@@ -83,29 +78,29 @@ namespace Destinations.Migrations
                         new
                         {
                             ReviewId = 1,
-                            Author = "Jordan_Safford",
+                            Author = "Jordan Safford",
                             DestinationId = 1,
                             Text = "Beautiful city with lots of cool old architecture"
                         },
                         new
                         {
                             ReviewId = 2,
-                            Author = "Dave_Smith",
+                            Author = "Dave Smith",
                             DestinationId = 2,
                             Text = "Cool modern city with a lot of history"
                         },
                         new
                         {
                             ReviewId = 3,
-                            Author = "Jordan_Safford",
-                            DestinationId = 3,
+                            Author = "Jordan Safford",
+                            DestinationId = 2,
                             Text = "Best food ever!"
                         },
                         new
                         {
                             ReviewId = 4,
-                            Author = "Richard_Jones",
-                            DestinationId = 4,
+                            Author = "Richard Jones",
+                            DestinationId = 3,
                             Text = "Unique faerie tale like city with lots of castles"
                         });
                 });

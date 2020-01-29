@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using Destinations.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace Reviews.Controllers
 {
@@ -18,9 +19,9 @@ namespace Reviews.Controllers
 
     // GET api/animals
   [HttpGet]
-    public ActionResult<IEnumerable<Review>> Get(string author, string text)
+    public ActionResult<IEnumerable<Review>> Get(string author, string text, string city, string country)
     {
-      var query = _db.Reviews.AsQueryable();
+      var query = _db.Reviews.Include(review => review.Destination).AsQueryable();
 
       if (author != null)
       {
@@ -31,6 +32,18 @@ namespace Reviews.Controllers
       {
         query = query.Where(entry => entry.Text == text);
       }
+
+      if (city != null)
+      {
+        query = query.Where(entry => entry.Destination.City == city);
+      }
+
+      if (country != null)
+      {
+        query = query.Where(entry => entry.Destination.Country == country);
+      }
+
+
 
       return query.ToList();
     }
@@ -58,9 +71,9 @@ namespace Reviews.Controllers
     }
 
     [HttpDelete("{id}")]
-    public void Delete(int id)
+    public void Delete(int id, string author)
     {
-        var reviewToDelete = _db.Reviews.FirstOrDefault(entry => entry.ReviewId == id);
+        var reviewToDelete = _db.Reviews.FirstOrDefault(entry => entry.ReviewId == id && entry.Author == author);
         _db.Reviews.Remove(reviewToDelete);
         _db.SaveChanges();     
     }

@@ -18,7 +18,7 @@ namespace Destinations.Controllers
 
     // GET api/animals
   [HttpGet]
-    public ActionResult<IEnumerable<Destination>> Get(string country, string city, int rating)
+    public ActionResult<IEnumerable<Destination>> Get(string country, string city, string rating)
     {
       var query = _db.Destinations.AsQueryable();
 
@@ -32,9 +32,9 @@ namespace Destinations.Controllers
         query = query.Where(entry => entry.City == city);
       }
 
-      if(city != null)
+      if(rating != null)
       {
-        query = query.Where(entry => entry.Rating == rating);
+        query = query.Where(entry => entry.Rating == int.Parse(rating));
       }
 
       return query.ToList();
